@@ -45,8 +45,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/digital-dream-labs/api v0.0.0-20201230194801-ee4f8f160098 h1:NB/DdQjZ8yobGhoL9ckfffV46DqX+wQnzafjqqqda8g=
 github.com/digital-dream-labs/api v0.0.0-20201230194801-ee4f8f160098/go.mod h1:fGK7rp4z1O17KBat0mPZxZpoN8sq9baSZk46dfKCKR0=
-github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6 h1:zIpRWEi517p2eHpk45uycg2g356QdckGEu2eLtTnJ0c=
-github.com/digital-dream-labs/opus-go v0.0.0-20200624151943-555f2a540cc6/go.mod h1:c5pEDtI90XiZ0+/qLTK2q7f2sZmtOkMvwIMHALWOLYo=
+github.com/digital-dream-labs/opus-go v0.0.0-20201230195736-934a8a9e0a1e h1:sbDWWDUdymyp3fTeQKz40a3x/frOSiWkBHD40o1/DQY=
+github.com/digital-dream-labs/opus-go v0.0.0-20201230195736-934a8a9e0a1e/go.mod h1:OmsiyJjTuSWs/9lgydMVi+ULpldzbMJdu3z2N2TehYk=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=
@@ -397,8 +397,8 @@ gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8
 gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f h1:BLraFXnmrev5lT+xlilqcH8XK9/i0At2xKjWk4p6zsU=
 gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/errgo.v2 v2.1.0/go.mod h1:hNsd1EY+bozCKY1Ytp96fpM3vjJbqLJn88ws8XvfDNI=
-gopkg.in/hraban/opus.v2 v2.0.0-20191117073431-57179dff69a6 h1:DijXYaSrpXmncjuTa+puGa28trQ8+jphcUJk3N9PzGY=
-gopkg.in/hraban/opus.v2 v2.0.0-20191117073431-57179dff69a6/go.mod h1:/L5E7a21VWl8DeuCPKxQBdVG5cy+L0MRZ08B1wnqt7g=
+gopkg.in/hraban/opus.v2 v2.0.0-20201025103112-d779bb1cc5a2 h1:sxrRNhZ+cNxxLwPw/vV8gNsz+bbqRQiZHBYBJfpyNoQ=
+gopkg.in/hraban/opus.v2 v2.0.0-20201025103112-d779bb1cc5a2/go.mod h1:/L5E7a21VWl8DeuCPKxQBdVG5cy+L0MRZ08B1wnqt7g=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.3/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.3.0 h1:clyUAQHOM3G0M3f5vQj7LuJrETvjVot3Z5el9nffUtU=
