@@ -14,6 +14,8 @@ type (
 	IntentResponse = pb.IntentResponse
 	// KnowledgeGraphResponse aliases the protobuf KnowledgeGraphResponse type
 	KnowledgeGraphResponse = pb.KnowledgeGraphResponse
+	// IntentGraphResponse aliases the protobuf IntentGraphResponse type
+	IntentGraphResponse = pb.IntentGraphResponse
 	// ConnectionCheckResponse aliases the protobuf ConnectionCheckResponse type
 	ConnectionCheckResponse = pb.ConnectionCheckResponse
 )

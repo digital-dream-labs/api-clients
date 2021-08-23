@@ -51,6 +51,17 @@ type KGOpts struct {
 	Timezone string
 }
 
+// IntentGraphOpts extends StreamOpts with options of both Intent and KG
+type IntentGraphOpts struct {
+	StreamOpts
+	Handler    pb.IntentService
+	Mode       pb.RobotMode
+	SpeechOnly bool
+
+	// Doesnt seem to be passing this in
+	Timezone string
+}
+
 // CompressOpts specifies whether compression should be used and, if so, allows
 // the specification of parameters related to it
 type CompressOpts struct {
@@ -156,6 +167,21 @@ func (c *Conn) NewKGStream(ctx context.Context, opts KGOpts) (Stream, error) {
 		return nil, err
 	}
 	return &kgStream{
+		baseStream: c.newStream(&opts.StreamOpts, client, cancel),
+		opts:       &opts,
+	}, nil
+}
+
+// NewIntentGraphStream opens a new stream on the given connection to stream audio for the purpose of getting
+// a knowledge graph response
+func (c *Conn) NewIntentGraphStream(ctx context.Context, opts IntentGraphOpts) (Stream, error) {
+	ctx, cancel := getContext(ctx, &opts.StreamOpts)
+	client, err := c.client.StreamingIntentGraph(ctx)
+	if err != nil {
+		fmt.Println("GRPC Stream creation error:", err)
+		return nil, err
+	}
+	return &intentGraphStream{
 		baseStream: c.newStream(&opts.StreamOpts, client, cancel),
 		opts:       &opts,
 	}, nil
