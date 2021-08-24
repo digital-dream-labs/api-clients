@@ -178,7 +178,6 @@ func (c *Conn) NewIntentGraphStream(ctx context.Context, opts IntentGraphOpts) (
 	ctx, cancel := getContext(ctx, &opts.StreamOpts)
 	client, err := c.client.StreamingIntentGraph(ctx)
 	if err != nil {
-		fmt.Println("GRPC Stream creation error:", err)
 		return nil, err
 	}
 	return &intentGraphStream{
