@@ -46,6 +46,6 @@ func (c *intentGraphStream) WaitForResponse() (interface{}, error) {
 			continue
 		}
 
-		return intentG.GetIntentResult(), nil
+		return intentG, nil
 	}
 }
