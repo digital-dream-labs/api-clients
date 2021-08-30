@@ -12,9 +12,9 @@ func (c *intentGraphStream) SendAudio(audioData []byte) error {
 }
 
 func (c *intentGraphStream) createMessage(audioData []byte, encoding pb.AudioEncoding) interface{} {
-	ret := new(pb.StreamingIntentRequest)
+	ret := new(pb.StreamingIntentGraphRequest)
 	if !c.hasStreamed {
-		*ret = pb.StreamingIntentRequest{
+		*ret = pb.StreamingIntentGraphRequest{
 			DeviceId:        c.conn.opts.deviceID,
 			Session:         c.conn.opts.sessionID,
 			LanguageCode:    c.opts.Language,
@@ -46,6 +46,6 @@ func (c *intentGraphStream) WaitForResponse() (interface{}, error) {
 			continue
 		}
 
-		return intentG.GetIntentResult(), nil
+		return intentG, nil
 	}
 }
